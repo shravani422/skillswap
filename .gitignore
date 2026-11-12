@@ -1,0 +1,19 @@
+# NetBeans private settings
+nbproject/private/
+
+# Generated build files
+build/
+dist/
+*.class
+*.war
+
+# IDE files
+.idea/
+.vscode/
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
