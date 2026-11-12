@@ -30,8 +30,6 @@ Installation and Setup
 
 Prerequisites
 
-Make sure you have the following installed:
-
 - JDK (Java Development Kit)
 - NetBeans IDE
 - Apache Tomcat 10.1
@@ -44,36 +42,46 @@ Clone the repository or download it as a ZIP file from GitHub.
 
 2. Set Up the Database
 
-1. Start Apache and MySQL from XAMPP.
-2. Open phpMyAdmin in your browser.
-3. Create a new database named "skillswap_db".
-4. Select the newly created database.
-5. Open the Import tab.
-6. Choose the "skillswap_db.sql" file included in this repository.
-7. Click Import or Go.
+Step 1: Start Apache and MySQL from XAMPP.
+
+Step 2: Open phpMyAdmin in your browser.
+
+Step 3: Create a new database named "skillswap_db".
+
+Step 4: Select the newly created database.
+
+Step 5: Open the Import tab.
+
+Step 6: Choose the "skillswap_db.sql" file included in this repository.
+
+Step 7: Click Import or Go.
 
 This will create the required tables and import the sample records.
 
 3. Configure Database Connection
 
-1. Open the project in NetBeans.
-2. Locate "DBConnection.java" inside "src/java/util/".
-3. Update the database connection URL, username, and password according to your local MySQL configuration.
-4. Make sure the MySQL Connector/J library is available to the project.
+Step 1: Open the project in NetBeans.
 
-4. Configure the Server
+Step 2: Locate "DBConnection.java" inside "src/java/util/".
 
-1. Open the project in NetBeans.
-2. Configure Apache Tomcat 10.1 as the application server.
-3. Build the project.
-4. Run the application.
+Step 3: Update the database connection URL, username, and password according to your local MySQL configuration.
+
+Step 4: Make sure the MySQL Connector/J library is available to the project.
+
+4. Configure the Server and Run
+
+Step 1: Configure Apache Tomcat 10.1 as the application server in NetBeans.
+
+Step 2: Build the project.
+
+Step 3: Run the application.
 
 Limitations and Notes
 
 - This project was developed as an academic project and is intended for learning and demonstration purposes.
 - The database export includes sample user accounts and sample records.
 - Passwords in the sample database are stored as plain text. This implementation is not suitable for production use.
-- Users should use dummy credentials for testing and never enter real or reused passwords.
+- Use dummy credentials for testing. Do not enter real or reused passwords.
 - The application requires a locally configured MySQL/MariaDB database and Apache Tomcat server.
 - Sample certificate image files referenced in the database may not be available unless the corresponding files are provided.
 - Additional configuration may be required depending on the local development environment.
