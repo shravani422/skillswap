@@ -28,13 +28,59 @@ Full-stack Java Web Application
 
 Installation and Setup
 
-1. Clone or download this repository.
-2. Open the project in NetBeans IDE.
-3. Create a MySQL database for the application.
-4. Update the database connection details in "DBConnection.java" according to your local MySQL configuration.
-5. Ensure Apache Tomcat 10.1 is configured in NetBeans.
-6. Build and run the project.
+Prerequisites
 
-Note
+Make sure you have the following installed:
 
-The application requires a MySQL database and Apache Tomcat server to run.
+- JDK (Java Development Kit)
+- NetBeans IDE
+- Apache Tomcat 10.1
+- MySQL or MariaDB
+- phpMyAdmin (for easy database management)
+
+1. Download the Project
+
+Clone the repository or download it as a ZIP file from GitHub.
+
+2. Set Up the Database
+
+1. Start Apache and MySQL from XAMPP.
+2. Open phpMyAdmin in your browser.
+3. Create a new database named "skillswap_db".
+4. Select the newly created database.
+5. Open the Import tab.
+6. Choose the "skillswap_db.sql" file included in this repository.
+7. Click Import or Go.
+
+This will create the required tables and import the sample records.
+
+3. Configure Database Connection
+
+1. Open the project in NetBeans.
+2. Locate "DBConnection.java" inside "src/java/util/".
+3. Update the database connection URL, username, and password according to your local MySQL configuration.
+4. Make sure the MySQL Connector/J library is available to the project.
+
+4. Configure the Server
+
+1. Open the project in NetBeans.
+2. Configure Apache Tomcat 10.1 as the application server.
+3. Build the project.
+4. Run the application.
+
+Limitations and Notes
+
+- This project was developed as an academic project and is intended for learning and demonstration purposes.
+- The database export includes sample user accounts and sample records.
+- Passwords in the sample database are stored as plain text. This implementation is not suitable for production use.
+- Users should use dummy credentials for testing and never enter real or reused passwords.
+- The application requires a locally configured MySQL/MariaDB database and Apache Tomcat server.
+- Sample certificate image files referenced in the database may not be available unless the corresponding files are provided.
+- Additional configuration may be required depending on the local development environment.
+
+Future Improvements
+
+- Implement secure password hashing.
+- Add email verification and password recovery.
+- Improve application security and input validation.
+- Deploy the application to a live hosting environment.
