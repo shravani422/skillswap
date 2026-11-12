@@ -25,3 +25,16 @@ Technologies Used
 Project Type
 
 Full-stack Java Web Application
+
+Installation and Setup
+
+1. Clone or download this repository.
+2. Open the project in NetBeans IDE.
+3. Create a MySQL database for the application.
+4. Update the database connection details in "DBConnection.java" according to your local MySQL configuration.
+5. Ensure Apache Tomcat 10.1 is configured in NetBeans.
+6. Build and run the project.
+
+Note
+
+The application requires a MySQL database and Apache Tomcat server to run.
